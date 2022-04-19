@@ -1,6 +1,6 @@
 module Spree
   module Frontend
-    class Configuration < Preferences::Configuration
+    class Configuration < ::Spree::Preferences::Configuration
       preference :additional_filters_partials, :array, default: %w()
       preference :always_put_site_name_in_title, :boolean, default: true
       preference :coupon_codes_enabled, :boolean, default: true # Determines if we show coupon code form at cart and checkout

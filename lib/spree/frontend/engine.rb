@@ -1,5 +1,3 @@
-require_relative 'configuration'
-
 module Spree
   module Frontend
     class Engine < ::Rails::Engine
@@ -17,6 +15,7 @@ module Spree
       end
 
       initializer 'spree.frontend.environment', before: :load_config_initializers do |_app|
+        require_relative 'configuration'
         Spree::Frontend::Config = Spree::Frontend::Configuration.new
       end
     end
