@@ -8,8 +8,6 @@
 //= require polyfill.min
 //= require fetch.umd
 //= require spree/api/main
-//= require ./lazysizes.config
-//= require lazysizes.min
 //= require accounting.min
 //= require spree/frontend/account
 //= require spree/frontend/api_tokens
